@@ -16,6 +16,7 @@ if (qus1.toLowerCase() === 'yes' || qus1.toUpperCase() =='YES' || qus1.toUpperCa
 else
 {
     alert("you didn't answer in yes or no ");
+    qus1 =prompt("Do i like roses ? (yes/no , y/n) ");
 
 }
 
@@ -30,6 +31,7 @@ if (qus2.toLowerCase() === 'yes' || qus2.toUpperCase() =='YES' || qus2.toUpperCa
 else
 {
     alert("you didn't answer in yes or no ");
+    qus2 =prompt("Do i like spend time at home ? (yes/no , y/n)");
 
 }
 
@@ -45,6 +47,7 @@ if (qus3.toLowerCase() === 'yes' || qus3.toUpperCase() =='YES' || qus3.toUpperCa
 else
 {
     alert("you didn't answer in yes or no ");
+    qus3 =prompt("Do you think i like a cars ? (yes/no , y/n)");
 
 }
 
@@ -59,6 +62,7 @@ if (qus4.toLowerCase() === 'yes' || qus4.toUpperCase() =='YES' || qus4.toUpperCa
 else
 {
     alert("you didn't answer in yes or no ");
+    qus4 =prompt("Do you think i love sleeping ? (yes/no , y/n)");
 
 }
 
@@ -73,6 +77,7 @@ if (qus5.toLowerCase() === 'yes' || qus5.toUpperCase() =='YES' || qus5.toUpperCa
 else
 {
     alert("you didn't answer in yes or no ");
+    qus5 =prompt("Am i a serious person ? (yes/no , y/n)");
 
 }
 
@@ -105,7 +110,7 @@ for (let i = 0; i < 4 ; i++)
 
 if (gussing) 
 {
-    alert (" the correct answer is 62 ");    
+    alert (" My weight is 62 ");    
 } else {
     alert ("you falied :( , the correct answer is 62 ");
     
@@ -116,26 +121,26 @@ var myfavcolor =['blue','white','red'];
 
     for (let index = 0 ; index < 6 ; index++) 
     {
-       let favcolor =prompt("gusse at least one of  my favourit colors :").toLowerCase();
+       let favcolor =prompt("gusse at least one of my favourit colors :").toLowerCase();
         if (favcolor === myfavcolor[0]) {
-            alert ("YES , blue one of my favourite color ");
+            alert ("YES , blue one of my favourite colors ");
             score++;
             break;
             
         } else if (favcolor === myfavcolor[1]) {
 
-            alert ("YES ,white one of my favourite color ");
+            alert ("YES ,white one of my favourite colors ");
             score++;
             break;
             
         }else if (favcolor === myfavcolor[2]) {
-            alert ("YES , red one of my favourite color ");
+            alert ("YES , red one of my favourite colors ");
             score++;
             break;
 
         } else {
             if (index == 5 ) {
-                alert( "Unfortunately, you failed  My favourite color is :" + myfavcolor );
+                alert( "Unfortunately, you failed you completed all yours attempts :( And  my favourite colors are :" + myfavcolor );
                 
             }
         }
@@ -143,6 +148,7 @@ var myfavcolor =['blue','white','red'];
     }
  console.log ('your final score :' + score);
  alert("your final score :"  + score + "/7" );
+ 
 
     
 

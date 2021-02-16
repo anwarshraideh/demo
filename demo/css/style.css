@@ -2,65 +2,89 @@ body {
 
     width: 960px ;
     margin: auto;
-    background-color: cornflowerblue;
+    background-color: rgb(114, 124, 143);
 }
 
 h1
 {
 text-align: center;
-color: blue;
-background-color: cornsilk;
+color: rgb(218, 210, 211);
+font-size: 40px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 50px;
+margin-top: 50px;
 
 }
 
 img {
-width: 150px;
-
+width: 300px;
 display: block;
 margin: auto;
+
 }
 
-p{
+p {
+    line-height: 30px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
 
-line-height: 30px;
+}
+
+
+#myparagraph{
+
+line-height: 1.8;
+font-size: 20px;
 
 }
 
 h2
 {
-color: blue;
-background-color: burlywood;
-
+    color: rgb(218, 210, 211);
+    background-color: rgb(245, 126, 126);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
 }
 h3
 {
 
-    background-color: cornsilk;
-    color: crimson;
-
+    color: rgb(218, 210, 211);
+    background-color: rgb(245, 126, 126);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 main ol 
 {
 
-    color:darkkhaki ;
-    background-color: darkred;
+    color: rgb(49, 13, 43);
+    font-size: 18px;
     line-height: 20px;
+    text-decoration: underline;
 
 
 }
 #intro
 {
-    color: darkslateblue;
-    background-color: gainsboro;
+    color: rgb(218, 210, 211);
+    background-color: rgb(245, 126, 126);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
 }
 
 main ul
 {
 
-    color:  black;
-    background-color:gainsboro;
+    color: rgb(49, 13, 43);
     line-height: 20px;
+    font-size: 18px;
 
 }
 
