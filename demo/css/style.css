@@ -32,3 +32,35 @@ color: blue;
 background-color: burlywood;
 
 }
+h3
+{
+
+    background-color: cornsilk;
+    color: crimson;
+
+}
+
+main ol 
+{
+
+    color:darkkhaki ;
+    background-color: darkred;
+    line-height: 20px;
+
+
+}
+#intro
+{
+    color: darkslateblue;
+    background-color: gainsboro;
+}
+
+main ul
+{
+
+    color:  black;
+    background-color:gainsboro;
+    line-height: 20px;
+
+}
+

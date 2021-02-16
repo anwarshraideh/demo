@@ -1,5 +1,6 @@
 'use strict'
 
+let score = 0;
 let userName =prompt("whats your name ?");
 alert ("welcome " + userName + " :)");
 
@@ -8,6 +9,7 @@ let qus1 =prompt("Do i like roses ? (yes/no , y/n) ");
 
 if (qus1.toLowerCase() === 'yes' || qus1.toUpperCase() =='YES' || qus1.toUpperCase() =='Y' || qus1.toLowerCase() =='y'  ){
     alert("You are right, I love roses");
+    score++;
 } else if (qus1.toLowerCase() === 'no' || qus1.toUpperCase() =='NO' ||qus1.toLowerCase() === 'n' || qus1.toUpperCase() =='N' ) {
     alert("You are wrong ,why do you think that ?");
 }
@@ -21,6 +23,7 @@ let qus2 =prompt("Do i like spend time at home ? (yes/no , y/n)");
 //console.log("you answerd " + qus2);
 if (qus2.toLowerCase() === 'yes' || qus2.toUpperCase() =='YES' || qus2.toUpperCase() =='Y' || qus2.toLowerCase() =='y'  ){
     alert("You are right ");
+    score++;
 } else if (qus2.toLowerCase() === 'no' || qus2.toUpperCase() =='NO' ||qus2.toLowerCase() === 'n' || qus2.toUpperCase() =='N' ) {
     alert("You are wrong ,why do you think that ?");
 }
@@ -37,6 +40,7 @@ if (qus3.toLowerCase() === 'yes' || qus3.toUpperCase() =='YES' || qus3.toUpperCa
     alert("You are wrong ");
 } else if (qus3.toLowerCase() === 'no' || qus3.toUpperCase() =='NO' ||qus3.toLowerCase() === 'n' || qus3.toUpperCase() =='N' ) {
     alert("You are right i dont love cares ");
+    score++;
 }
 else
 {
@@ -48,6 +52,7 @@ let qus4 =prompt("Do you think i love sleeping ? (yes/no , y/n)");
 //console.log("you answerd " + qus4);
 if (qus4.toLowerCase() === 'yes' || qus4.toUpperCase() =='YES' || qus4.toUpperCase() =='Y' || qus4.toLowerCase() =='y'  ){
     alert("You are right, i think that sleeping is the best thing in the world  ");
+    score++;
 } else if (qus4.toLowerCase() === 'no' || qus4.toUpperCase() =='NO' ||qus4.toLowerCase() === 'n' || qus4.toUpperCase() =='N' ) {
     alert("You are wrong ,why do you think that ?");
 }
@@ -63,12 +68,84 @@ if (qus5.toLowerCase() === 'yes' || qus5.toUpperCase() =='YES' || qus5.toUpperCa
     alert("wrong, iam just a queit person ");
 } else if (qus5.toLowerCase() === 'no' || qus5.toUpperCase() =='NO' ||qus5.toLowerCase() === 'n' || qus5.toUpperCase() =='N' ) {
     alert("You are right");
+    score++;
 }
 else
 {
     alert("you didn't answer in yes or no ");
 
 }
+
+var gussing = false ;
+
+for (let i = 0; i < 4 ; i++)
+ {
+    let guessNum =prompt(" guess my weight ");
+    if (guessNum > 62)
+     {
+     alert("too high");
+     }
+     else if (guessNum < 62)
+     {
+     alert("too low");
+     }
+    else if (guessNum == 62)
+    {
+    alert("that's correct ,congratulation");
+    score++;
+    gussing = true ;
+    break;
+    }
+    else 
+    {
+    alert("unvalid value");
+    }
+
+}
+
+if (gussing) 
+{
+    alert (" the correct answer is 62 ");    
+} else {
+    alert ("you falied :( , the correct answer is 62 ");
+    
+}
+
+var myfavcolor =['blue','white','red'];
+
+
+    for (let index = 0 ; index < 6 ; index++) 
+    {
+       let favcolor =prompt("gusse at least one of  my favourit colors :").toLowerCase();
+        if (favcolor === myfavcolor[0]) {
+            alert ("YES , blue one of my favourite color ");
+            score++;
+            break;
+            
+        } else if (favcolor === myfavcolor[1]) {
+
+            alert ("YES ,white one of my favourite color ");
+            score++;
+            break;
+            
+        }else if (favcolor === myfavcolor[2]) {
+            alert ("YES , red one of my favourite color ");
+            score++;
+            break;
+
+        } else {
+            if (index == 5 ) {
+                alert( "Unfortunately, you failed  My favourite color is :" + myfavcolor );
+                
+            }
+        }
+        
+    }
+ console.log ('your final score :' + score);
+ alert("your final score :"  + score + "/7" );
+
+    
+
 
 
 
