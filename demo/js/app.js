@@ -6,8 +6,8 @@ alert ("welcome " + userName + " :)");
 
 let qus1 =prompt("Do i like roses ? (yes/no , y/n) ");
 //console.log("you answerd " + qus1);
-
-if (qus1.toLowerCase() === 'yes' || qus1.toUpperCase() =='YES' || qus1.toUpperCase() =='Y' || qus1.toLowerCase() =='y'  ){
+function question1(answer1){
+ if (qus1.toLowerCase() === 'yes' || qus1.toUpperCase() =='YES' || qus1.toUpperCase() =='Y' || qus1.toLowerCase() =='y'  ){
     alert("You are right, I love roses");
     score++;
 } else if (qus1.toLowerCase() === 'no' || qus1.toUpperCase() =='NO' ||qus1.toLowerCase() === 'n' || qus1.toUpperCase() =='N' ) {
@@ -18,11 +18,16 @@ else
     alert("you didn't answer in yes or no ");
     qus1 =prompt("Do i like roses ? (yes/no , y/n) ");
 
+}   
 }
+question1(qus1);
+
+
 
 let qus2 =prompt("Do i like spend time at home ? (yes/no , y/n)");
 //console.log("you answerd " + qus2);
-if (qus2.toLowerCase() === 'yes' || qus2.toUpperCase() =='YES' || qus2.toUpperCase() =='Y' || qus2.toLowerCase() =='y'  ){
+function question2(answer2){
+ if (qus2.toLowerCase() === 'yes' || qus2.toUpperCase() =='YES' || qus2.toUpperCase() =='Y' || qus2.toLowerCase() =='y'  ){
     alert("You are right ");
     score++;
 } else if (qus2.toLowerCase() === 'no' || qus2.toUpperCase() =='NO' ||qus2.toLowerCase() === 'n' || qus2.toUpperCase() =='N' ) {
@@ -33,12 +38,16 @@ else
     alert("you didn't answer in yes or no ");
     qus2 =prompt("Do i like spend time at home ? (yes/no , y/n)");
 
+}   
 }
+question2(qus2);
+
 
 let qus3 =prompt("Do you think i like a cars ? (yes/no , y/n)");
 
 //console.log("you answerd " + qus3);
-if (qus3.toLowerCase() === 'yes' || qus3.toUpperCase() =='YES' || qus3.toUpperCase() =='Y' || qus3.toLowerCase() =='y'  ){
+function question3(answer3){
+  if (qus3.toLowerCase() === 'yes' || qus3.toUpperCase() =='YES' || qus3.toUpperCase() =='Y' || qus3.toLowerCase() =='y'  ){
     alert("You are wrong ");
 } else if (qus3.toLowerCase() === 'no' || qus3.toUpperCase() =='NO' ||qus3.toLowerCase() === 'n' || qus3.toUpperCase() =='N' ) {
     alert("You are right i dont love cares ");
@@ -49,11 +58,15 @@ else
     alert("you didn't answer in yes or no ");
     qus3 =prompt("Do you think i like a cars ? (yes/no , y/n)");
 
+}  
 }
+question3(qus3);
+
 
 let qus4 =prompt("Do you think i love sleeping ? (yes/no , y/n)");
 //console.log("you answerd " + qus4);
-if (qus4.toLowerCase() === 'yes' || qus4.toUpperCase() =='YES' || qus4.toUpperCase() =='Y' || qus4.toLowerCase() =='y'  ){
+function question4(answer4){
+ if (qus4.toLowerCase() === 'yes' || qus4.toUpperCase() =='YES' || qus4.toUpperCase() =='Y' || qus4.toLowerCase() =='y'  ){
     alert("You are right, i think that sleeping is the best thing in the world  ");
     score++;
 } else if (qus4.toLowerCase() === 'no' || qus4.toUpperCase() =='NO' ||qus4.toLowerCase() === 'n' || qus4.toUpperCase() =='N' ) {
@@ -64,11 +77,15 @@ else
     alert("you didn't answer in yes or no ");
     qus4 =prompt("Do you think i love sleeping ? (yes/no , y/n)");
 
+}   
 }
+question4(qus4);
+
 
 let qus5 =prompt("Am i a serious person ? (yes/no , y/n)");
 //console.log("you answerd " + qus5);
-if (qus5.toLowerCase() === 'yes' || qus5.toUpperCase() =='YES' || qus5.toUpperCase() =='Y' || qus5.toLowerCase() =='y'  ){
+function question5(answer4){
+  if (qus5.toLowerCase() === 'yes' || qus5.toUpperCase() =='YES' || qus5.toUpperCase() =='Y' || qus5.toLowerCase() =='y'  ){
     alert("wrong, iam just a queit person ");
 } else if (qus5.toLowerCase() === 'no' || qus5.toUpperCase() =='NO' ||qus5.toLowerCase() === 'n' || qus5.toUpperCase() =='N' ) {
     alert("You are right");
@@ -79,13 +96,16 @@ else
     alert("you didn't answer in yes or no ");
     qus5 =prompt("Am i a serious person ? (yes/no , y/n)");
 
+}  
 }
+question5(qus5);
 
-var gussing = false ;
+let guessNum =prompt(" guess my weight ");
+ var gussing = false ;
 
 for (let i = 0; i < 4 ; i++)
  {
-    let guessNum =prompt(" guess my weight ");
+    
     if (guessNum > 62)
      {
      alert("too high");
@@ -114,14 +134,16 @@ if (gussing)
 } else {
     alert ("you falied :( , the correct answer is 62 ");
     
-}
+}   
+
+
 
 var myfavcolor =['blue','white','red'];
-
-
+let favcolor =prompt("gusse at least one of my favourit colors :").toLowerCase();
+function question7 (answer7){
     for (let index = 0 ; index < 6 ; index++) 
     {
-       let favcolor =prompt("gusse at least one of my favourit colors :").toLowerCase();
+       
         if (favcolor === myfavcolor[0]) {
             alert ("YES , blue one of my favourite colors ");
             score++;
@@ -146,6 +168,8 @@ var myfavcolor =['blue','white','red'];
         }
         
     }
+}
+    question7(favcolor);
  console.log ('your final score :' + score);
  alert("your final score :"  + score + "/7" );
  
