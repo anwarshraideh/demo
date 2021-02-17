@@ -22,8 +22,6 @@ else
 }
 question1(qus1);
 
-
-
 let qus2 =prompt("Do i like spend time at home ? (yes/no , y/n)");
 //console.log("you answerd " + qus2);
 function question2(answer2){
@@ -100,12 +98,13 @@ else
 }
 question5(qus5);
 
-let guessNum =prompt(" guess my weight ");
- var gussing = false ;
-
+let guessNum;
+var gussing = false ;
+function question6(answer6) {
+    
 for (let i = 0; i < 4 ; i++)
  {
-    
+     guessNum =prompt(" guess my weight ");
     if (guessNum > 62)
      {
      alert("too high");
@@ -127,6 +126,8 @@ for (let i = 0; i < 4 ; i++)
     }
 
 }
+}
+question6(guessNum);
 
 if (gussing) 
 {
@@ -163,7 +164,7 @@ function question7 (answer7){
         } else {
             if (index == 5 ) {
                 alert( "Unfortunately, you failed you completed all yours attempts :( And  my favourite colors are :" + myfavcolor );
-                
+    
             }
         }
         
