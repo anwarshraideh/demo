@@ -1,8 +1,13 @@
 'use strict'
 
 let score = 0;
-let userName =prompt("whats your name ?");
-alert ("welcome " + userName + " :)");
+let user_Name =prompt("whats your name ?");
+function userName(name) {
+    alert ("welcome " + user_Name + " :)");
+}
+
+userName(user_Name);
+
 
 let qus1 =prompt("Do i like roses ? (yes/no , y/n) ");
 //console.log("you answerd " + qus1);
@@ -140,11 +145,11 @@ if (gussing)
 
 
 var myfavcolor =['blue','white','red'];
-let favcolor =prompt("gusse at least one of my favourit colors :").toLowerCase();
+let favcolor;
 function question7 (answer7){
     for (let index = 0 ; index < 6 ; index++) 
     {
-       
+        favcolor =prompt("gusse at least one of my favourit colors :").toLowerCase();
         if (favcolor === myfavcolor[0]) {
             alert ("YES , blue one of my favourite colors ");
             score++;
@@ -161,7 +166,8 @@ function question7 (answer7){
             score++;
             break;
 
-        } else {
+        } 
+
             if (index == 5 ) {
                 alert( "Unfortunately, you failed you completed all yours attempts :( And  my favourite colors are :" + myfavcolor );
     
@@ -169,7 +175,7 @@ function question7 (answer7){
         }
         
     }
-}
+
     question7(favcolor);
  console.log ('your final score :' + score);
  alert("your final score :"  + score + "/7" );
