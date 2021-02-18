@@ -10,15 +10,16 @@ userName(user_Name);
 
 
 let qus1 =prompt("Do i like roses ? (yes/no , y/n) ");
-//console.log("you answerd " + qus1);
+
 function question1(answer1){
+    
  if (qus1.toLowerCase() === 'yes' || qus1.toUpperCase() =='YES' || qus1.toUpperCase() =='Y' || qus1.toLowerCase() =='y'  ){
     alert("You are right, I love roses");
     score++;
 } else if (qus1.toLowerCase() === 'no' || qus1.toUpperCase() =='NO' ||qus1.toLowerCase() === 'n' || qus1.toUpperCase() =='N' ) {
     alert("You are wrong ,why do you think that ?");
 }
-else
+else 
 {
     alert("you didn't answer in yes or no ");
     qus1 =prompt("Do i like roses ? (yes/no , y/n) ");
@@ -28,7 +29,6 @@ else
 question1(qus1);
 
 let qus2 =prompt("Do i like spend time at home ? (yes/no , y/n)");
-//console.log("you answerd " + qus2);
 function question2(answer2){
  if (qus2.toLowerCase() === 'yes' || qus2.toUpperCase() =='YES' || qus2.toUpperCase() =='Y' || qus2.toLowerCase() =='y'  ){
     alert("You are right ");
@@ -47,8 +47,6 @@ question2(qus2);
 
 
 let qus3 =prompt("Do you think i like a cars ? (yes/no , y/n)");
-
-//console.log("you answerd " + qus3);
 function question3(answer3){
   if (qus3.toLowerCase() === 'yes' || qus3.toUpperCase() =='YES' || qus3.toUpperCase() =='Y' || qus3.toLowerCase() =='y'  ){
     alert("You are wrong ");
@@ -67,7 +65,6 @@ question3(qus3);
 
 
 let qus4 =prompt("Do you think i love sleeping ? (yes/no , y/n)");
-//console.log("you answerd " + qus4);
 function question4(answer4){
  if (qus4.toLowerCase() === 'yes' || qus4.toUpperCase() =='YES' || qus4.toUpperCase() =='Y' || qus4.toLowerCase() =='y'  ){
     alert("You are right, i think that sleeping is the best thing in the world  ");
@@ -86,7 +83,6 @@ question4(qus4);
 
 
 let qus5 =prompt("Am i a serious person ? (yes/no , y/n)");
-//console.log("you answerd " + qus5);
 function question5(answer4){
   if (qus5.toLowerCase() === 'yes' || qus5.toUpperCase() =='YES' || qus5.toUpperCase() =='Y' || qus5.toLowerCase() =='y'  ){
     alert("wrong, iam just a queit person ");
@@ -141,8 +137,6 @@ if (gussing)
     alert ("you falied :( , the correct answer is 62 ");
     
 }   
-
-
 
 var myfavcolor =['blue','white','red'];
 let favcolor;
